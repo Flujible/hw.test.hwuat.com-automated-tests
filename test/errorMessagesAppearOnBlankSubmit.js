@@ -1,4 +1,4 @@
-this.basicTest = (browser) => {
+this.errorMessagesAppearOnBlankSubmit = (browser) => {
   //Navigate to the page and wait until it has loaded
   browser.url('http://hw.test.hwuat.com/pages/homepage.html');
   browser.waitForElementVisible('body');
@@ -15,3 +15,7 @@ this.basicTest = (browser) => {
   });
   browser.end();
 };
+
+module.exports = {
+  disabled: true
+}
