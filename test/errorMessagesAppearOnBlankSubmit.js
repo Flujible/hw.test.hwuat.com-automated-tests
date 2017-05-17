@@ -18,4 +18,4 @@ this.errorMessagesAppearOnBlankSubmit = (browser) => {
 
 module.exports = {
   disabled: true
-}
+};
