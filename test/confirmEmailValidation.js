@@ -16,8 +16,8 @@ this.emailValidation = (browser) => {
     'Hello',
     784037,
     -12,
-    'george.s.bryantgmail.com',
-    'george.s.bryant@gmail',
+    'testEmailtestDomain.com',
+    'testEmail@testDomain',
     '@.',
     '!£'
   ];
