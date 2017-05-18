@@ -9,7 +9,6 @@ let setup = (browser) => {
   browser.setValue("form#contactForm div:nth-child(3) div div input.input", "QA Analyst"); //Job title
   browser.setValue("form#contactForm div:nth-child(4) div div input.input", "testEmail@testDomain.com"); //Email
   browser.setValue("form#contactForm div:nth-child(4) div:nth-child(2) div input.input", "testEmail@testDomain.com"); //Confirm email
-  browser.pause(5000);
 };
 
 this.phoneNumberValidation = (browser) => {
@@ -29,12 +28,13 @@ this.phoneNumberValidation = (browser) => {
     browser.setValue("form#contactForm div:nth-child(3) div:nth-child(2) div input.input", value);
     browser.click("button.btn");
     browser.verify.containsText("form#contactForm div:nth-child(3) div:nth-child(2) div p.errorMessage", "Please enter a valid phone number");
-    browser.clearValue("form#contactForm div:nth-child(3) div:nth-child(2) div input.input");
 
-    // On successfull submit, the page redirects, so re-setup the original page
+    // On successfull submit, the page redirects, so re-setup the original page, if not redirected then clear the input field
     browser.getTitle((title) => {
       if(title === 'HW Template Sandbox') {
         setup(browser);
+      } else {
+        browser.clearValue("form#contactForm div:nth-child(3) div:nth-child(2) div input.input");
       }
     });
   });
