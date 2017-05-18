@@ -16,6 +16,6 @@ this.errorMessagesAppearOnBlankSubmit = (browser) => {
   browser.end();
 };
 
-module.exports = {
-  disabled: true
-};
+// module.exports = {
+//   disabled: true
+// };
