@@ -16,7 +16,7 @@ this.phoneNumberValidation = (browser) => {
     'Hello',
     7840372850743027,
     -12,
-    074326595766,
+    074325595766,
     0743265957
   ];
 
