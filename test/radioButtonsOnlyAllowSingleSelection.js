@@ -23,6 +23,7 @@ this.radioButtonsOnlyAllowSingleSelection = (browser) => {
   browser.end();
 };
 
+//Uncomment this to disable this test
 // module.exports = {
 //   disabled: true
 // };
