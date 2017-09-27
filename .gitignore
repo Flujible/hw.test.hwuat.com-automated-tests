@@ -38,3 +38,6 @@ jspm_packages
 
 # test outputs
 /reports
+
+#linting
+.jshintrc

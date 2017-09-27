@@ -20,6 +20,8 @@
     "nightwatch": "^0.9.15",
     "selenium-download": "^2.0.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.7.2"
+  },
   "description": ""
 }
