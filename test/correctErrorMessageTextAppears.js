@@ -19,6 +19,6 @@ this.correctErrorMessageTextAppears = (browser) => {
 };
 
 //Uncomment this to disable this test
-// module.exports = {
-//   disabled: true
-// };
+module.exports = {
+  disabled: true
+};
