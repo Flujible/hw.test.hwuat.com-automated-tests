@@ -13,6 +13,7 @@ module.exports = {
       "webdriver.chrome.driver" : "./node_modules/nightwatch/bin/chromedriver"
     }
   },
+  "test_runner": "mocha",
   "test_settings": {
     "default": {
       "screenshots": {
