@@ -10,10 +10,12 @@ module.exports = {
     "host": "127.0.0.1",
     "port": 4444, // standard selenium port
     "cli_args": { // chromedriver is downloaded by selenium-download (see readme)
-      "webdriver.chrome.driver" : "./node_modules/nightwatch/bin/chromedriver"
+      "webdriver.chrome.driver" : "./node_modules/nightwatch/bin/chromedriver",
+      "webdriver.ie.driver": "C:/Users/gbryant/Develop/IEDriverServer.exe",
+      "webdriver.gecko.driver": "C:/Users/gbryant/Develop/geckodriver.exe",
+      "webdriver.firefox.profile": ""
     }
   },
-  "test_runner": "mocha",
   "test_settings": {
     "default": {
       "screenshots": {
@@ -30,6 +32,24 @@ module.exports = {
     "chrome": {
       "desiredCapabilities": {
         "browserName": "chrome",
+        "javascriptEnabled": true // turn off to test progressive enhancement
+      }
+    },
+    "ie": {
+      "desiredCapabilities": {
+        "browserName": "internet explorer",
+        "version": "11",
+        "selenium_port"  : 4444,
+        "selenium_host"  : "localhost",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "allowBlockedContent": true,
+        "ignoreProtectedModeSettings": true
+      }
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
         "javascriptEnabled": true // turn off to test progressive enhancement
       }
     }
