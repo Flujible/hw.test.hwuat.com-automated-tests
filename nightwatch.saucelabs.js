@@ -26,20 +26,43 @@ module.exports = {
         "waitForConditionTimeout": 10000,
       },
     },
-    "chrome": {
+    "chrome61_Win10": {
       "desiredCapabilities": {
         "browserName": "chrome",
-        "platform": "OS X 10.11",
-        "version": "47",
+        "platform": "Windows 10",
+        "version": "61.0",
       },
     },
-    "ie11": {
+    "firefox56_macOS10.12": {
+      "browserName": "firefox",
+      "version": "56.0",
+      "platform": "macOS 10.12"
+    },
+    "ie11_Win7": {
       "desiredCapabilities": {
         "browserName": "internet explorer",
-        "platform": "Windows 10",
+        "platform": "Windows 7",
         "version": "11.0",
       },
     },
+    "iphoneX_iOS11": {
+      "desiredCapabilities": {
+        "browserName": "Safari",
+        "appiumVersion": "1.7.1",
+        "deviceName": "iPhone X Simulator",
+        "deviceOrientation": "portrait",
+        "platformName": "iOS",
+        "platformVersion": "11.0",
+      },
+    },
+    "Android7": {
+      "automationName": "Appium",
+      "appiumVersion": "1.7.1",
+      "browserName": "Chrome",
+      "deviceName": "Android GoogleAPI Emulator",
+      "platformVersion": "7.1",
+      "platformName": "Android"
+    }
   }
 };
 /**

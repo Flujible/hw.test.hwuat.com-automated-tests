@@ -12,8 +12,7 @@ module.exports = {
     "cli_args": { // chromedriver is downloaded by selenium-download (see readme)
       "webdriver.chrome.driver" : "./node_modules/nightwatch/bin/chromedriver",
       "webdriver.ie.driver": "C:/Users/gbryant/Develop/IEDriverServer.exe",
-      "webdriver.gecko.driver": "C:/Users/gbryant/Develop/geckodriver.exe",
-      "webdriver.firefox.profile": ""
+      "webdriver.gecko.driver": "C:/Users/gbryant/Develop/geckodriver.exe"
     }
   },
   "test_settings": {

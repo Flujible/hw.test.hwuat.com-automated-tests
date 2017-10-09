@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "nightwatch.conf.js",
   "scripts": {
-    "local": "nightwatch --config nightwatch.local.js --env ie",
-    "saucelabs": "nightwatch --config nightwatch.saucelabs.js",
+    "local": "nightwatch --config nightwatch.local.js --env firefox",
+    "saucelabs": "nightwatch --config nightwatch.saucelabs.js --env chrome61_Win10,iphoneX_iOS11",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
